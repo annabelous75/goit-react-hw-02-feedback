@@ -15,7 +15,7 @@ export class App extends Component {
   countTotalFeedback = () =>
     Object.values(this.state).reduce((acc, value) => acc + value, 0);
 
-  countPositiveFeedbackPercentage = () => {
+  cou ntPositiveFeedbackPercentage = () => {
     return this.countTotalFeedback()
       ? ((this.state.good / this.countTotalFeedback()) * 100).toFixed(0)
       : '0';
